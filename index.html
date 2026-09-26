@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#07070b">
+  <title>SHIVAM — Profile</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="bg">
+    <video id="bgVideo" autoplay muted loop playsinline preload="auto">
+      <source src="assets/background.mp4" type="video/mp4">
+    </video>
+    <div class="bg-overlay"></div>
+    <div class="grain"></div>
+  </div>
+
+  <section id="gate" class="gate">
+    <div class="gate-inner">
+      <div class="gate-dot"></div>
+      <button id="enterBtn" class="enter">click to enter...</button>
+      <div class="hint">tap anywhere to continue</div>
+    </div>
+  </section>
+
+  <main id="profile" class="page hidden">
+    <div class="topbar">
+      <div class="views"><span class="pulse"></span><span id="views">100</span></div>
+      <button id="soundBtn" class="sound" aria-label="Toggle music">
+        <span class="sound-bars"><i></i><i></i><i></i><i></i></span>
+      </button>
+    </div>
+
+    <section class="card">
+      <div class="avatar-wrap">
+        <div class="avatar">S</div>
+        <div class="online"></div>
+      </div>
+
+      <h1>SHIVAM</h1>
+      <div class="uid">UID 2,363,911</div>
+
+      <p class="bio">&lt;/&gt; code. build. create. ⚡</p>
+
+      <div class="links">
+        <a href="#" class="link">Discord</a>
+        <a href="#" class="link">YouTube</a>
+        <a href="#" class="link">GitHub</a>
+      </div>
+
+      <div class="status">
+        <span class="status-dot"></span>
+        <span>online</span>
+      </div>
+
+      <div class="music">
+        <div class="music-icon">♫</div>
+        <div class="music-info">
+          <div class="music-title">Baila Lento — Slowed</div>
+          <div class="music-sub">now playing</div>
+        </div>
+        <button id="playBtn" class="play" aria-label="Play or pause">Ⅱ</button>
+      </div>
+    </section>
+
+    <footer>profile • 2026</footer>
+  </main>
+
+  <audio id="audio" loop preload="auto">
+    <source src="assets/music.mp3" type="audio/mpeg">
+  </audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
